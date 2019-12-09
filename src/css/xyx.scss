@@ -1,0 +1,49 @@
+@charset "UTF-8";
+// 引入自定义颜色了列表  定义变量
+@import "./color";
+// 字体大小汇总
+.size8{
+    font-size: 8px;
+}
+.size10{
+    font-size: 10px;
+}
+.size12{
+    font-size: 12px;
+}
+.size13{
+    font-size: 13px;
+}
+.size14{
+    font-size: 14px;
+}
+.size15{
+    font-size: 15px;
+}
+.size16{
+    font-size: 16px;
+}
+.size18{
+    font-size: 18px;
+}
+.size20{
+    font-size: 20px;
+}
+.size24{
+    font-size: 24px;
+}
+.flexOne{
+    min-width: 0;
+    min-height: 0;
+    flex: 1;
+}
+// 页面窗口
+.pageDialog{
+    background-color: #f8f8f8;
+}
+// 变灰不可点击
+.noStep {
+    cursor: default!important;
+    pointer-events: none!important;
+    filter: grayscale(100%)!important;
+}

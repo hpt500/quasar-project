@@ -1,0 +1,34 @@
+{
+  "name": "xyx",
+  "version": "0.0.1",
+  "description": "This is a basic development environment",
+  "productName": "Quasar App",
+  "cordovaId": "org.cordova.xyx",
+  "capacitorId": "",
+  "author": "hpt500 <565420423@qq.com>",
+  "private": true,
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.0.0",
+    "axios": "^0.18.1",
+    "quasar": "^1.0.0",
+    "md5": "^2.2.1",
+    "qs": "^6.9.1",
+    "js-base64": "^2.5.1",
+    "lru-cache": "^5.1.1"
+  },
+  "devDependencies": {
+    "@quasar/app": "^1.0.0",
+    "vuelidate": "^0.7.4"
+  },
+  "engines": {
+    "node": ">= 8.9.0",
+    "npm": ">= 5.6.0",
+    "yarn": ">= 1.6.0"
+  },
+  "browserslist": [
+    "last 1 version, not dead, ie >= 11"
+  ]
+}

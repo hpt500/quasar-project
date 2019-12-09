@@ -1,0 +1,10 @@
+// app global css in SCSS form
+@charset "UTF-8";
+// 引入元素限制文件(行数)
+@import "./ellipsis";
+// 引入自定义颜色了列表  定义变量
+@import "./color";
+// 重置quasar内设样式
+@import "./reset";
+// 引入xyx样式
+@import "./xyx"
