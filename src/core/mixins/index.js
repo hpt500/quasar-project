@@ -8,7 +8,7 @@ export default {
             return this.$store.state.user
         },
         user_id() { // 用户id
-            return this.$store.state.user.id ? this.$store.state.user.id : ''
+            return this.$store.state.user._id ? this.$store.state.user._id : ''
         },
 
         // 是否具备权限

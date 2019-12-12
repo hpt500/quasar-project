@@ -39,7 +39,8 @@ quasar build -m ssr
 ## 后端情况
 
 采用express + mongodb进行数据操作
-相关文件位于前端开发环境项目同一层目录
+相关文件位于前端开发环境项目同一层目录 
+12.12 -- express-MongoDB2
 
 ## 联系方式
 

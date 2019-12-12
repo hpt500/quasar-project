@@ -15,13 +15,14 @@ export default {
     },
 
     // 登录
-    async login({ rootState: { axios } }, m) {
+    async login({ commit, rootState: { axios } }, m) {
         console.log("进行登录", m)
         let res = await axios.post('login', m)
         if (res && res.status == 200) {
             // 返回数据成功 获取小说排行榜数据
             console.log(res)
             if (res.data && res.data != '') {
+                commit("SET_USER_DEAL", res.data.data)
                 return res.data
             }
         } else

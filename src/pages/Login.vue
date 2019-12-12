@@ -59,7 +59,7 @@ export default {
             model: "",
             email: "",
 
-            username: "hpt510",
+            username: "13420478760",
             password: "123456",
 
             option: "opt1",
@@ -77,19 +77,30 @@ export default {
             this.$refs.lform.validate().then(success => {
                 if (success) {
                     this.loading = true;
-                    let data = { uname: this.username, upwd: this.password };
+                    let data = {
+                        phone: this.username,
+                        password: this.password
+                    };
                     this.$store.dispatch("login", data).then(res => {
                         this.loading = false;
-                        if (res === 0)
+                        if (res == 0)
                             this.$q.notify({
                                 message: "登录失败，请稍候再试！",
                                 color: "red"
                             });
                         else {
-                            this.$store.commit("SET_USER_DEAL", {
-                                m: res
+                            let status = res.status;
+                            this.$q.notify({
+                                message: res.message,
+                                color: status == 200 ? "green" : "red"
                             });
-                            this.$router.replace("/home");
+                            if (status == 200) {
+                                // 登录成功
+                                this.$store.commit("SET_USER_DEAL", {
+                                    m: res.data
+                                });
+                                this.$router.replace("/home");
+                            }
                         }
                     });
                 } else {
