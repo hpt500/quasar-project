@@ -22,7 +22,6 @@ export default {
             // 返回数据成功 获取小说排行榜数据
             console.log(res)
             if (res.data && res.data != '') {
-                commit("SET_USER_DEAL", res.data.data)
                 return res.data
             }
         } else
